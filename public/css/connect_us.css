@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/**内容**/
+	.content_bg{background:#f3f3f3;padding-bottom:40px;}
+	.content_wrap{max-width:1200px;margin:0 auto;}
+	.content_wrap h1{font-size:14px;color:#4c4c4c;line-height:65px;}
+	.content_wrap h1 span{color:#b2b2b2;}
+	.content_box{background-color:#fff;overflow:hidden;padding:50px 40px 0px 40px;}
+	.content_left{float:left;}
+	.content_right{float:right;}
+	.content_left h2{font-size:16px;color:#368be4;line-height:16px;margin-bottom:20px;}
+	.content_left p{font-aize:16px;color:#4c4c4c;line-height:27px;}
+	.content_left img{margin-top:50px;margin-left:127px;display:block;}
+	.content_right img{display:block;width:100%;}
+	@media(max-width:800px){.content_left img{float:right;margin-top:0px;}
+							.content_left p{float:left;}
+							.content_right img{width:80%;}}

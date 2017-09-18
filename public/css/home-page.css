@@ -1,0 +1,52 @@
+@charset "UTF-8";
+	/**公司资讯**/
+	.news{max-width:1200px;margin:0 auto;overflow:hidden;margin-bottom:90px;}
+	.c_news h2{color:#4c4c4c;}
+	.c_news span{color:#b2b2b2;}
+	.c_news{text-align:center;margin-top:50px;}
+	.n_pic{float:left;/*margin-left:83px;*/margin-top:73px;width:50%;}
+	.n_pic img{display:block;width:100%;}
+	.n_content{float:right;margin-top:47px;}
+	.n_content h3{color:#368be4;border-bottom:1px solid #b2b2b2;line-height:70px;}
+	.date{color:#368be4;font-size:22px;margin-right:10px;float:left;}
+	.year h1{color:#4c4c4c;font-size:14px;line-height:22px;border-left:1px solid #b2b2b2;padding-left:11px;}
+	.n_content a{font-size:14px;color:#4c4c4c;float:left;margin-left:29px;}
+	.n_content div{border-bottom:1px dashed #b2b2b2;line-height:70px;overflow:hidden;}
+	.year{float:left;margin-top:18px;}
+@media(max-width:800px){
+	.n_content{text-align:center;width:100%;}
+	.n_pic{position:relative;top:30px;left:25%;margin-top:30px;}
+	.news{width:70%;}}
+	/**股东介绍**/
+	.gt_wrap{background:#f2f2f2 url(../img/home/background.png) no-repeat bottom center;}
+	.gt{max-width:1200px;margin:0 auto;overflow:hidden;}
+	.gt_news h2{color:#4c4c4c;}
+	.gt_news span{color:#b2b2b2;}
+	.gt_news{text-align:center;margin-top:50px;}
+	.gt_pic{float:left;width:30%;margin-left:50px;margin-top:50px;}
+	.gt_content{float:right;margin-right:117px;margin-top:25px;width:50%;}
+	.gt_content img{width:100%;}
+	.gt_content p{font-size:14px;color:#4c4c4c;line-height:32px;text-indent:28px;text-align:justify;}
+	.search a{font-size:14px;color:#368be4;border:1px solid #368be4;padding:10px 20px;border-radius:20px;}
+	.search{margin-top:22px;margin-bottom:38px;}
+	@media(max-width:800px){.gt_pic{width:25%;margin-left:0px;margin-top:120px;}
+							.gt_pic img{width:100%;}
+							.gt_content{width:70%;margin-right:0px;margin-top:30px;}
+							.gt{width:80%}}
+	/**应用领域**/
+	.application_wrap{background:url(../img/home/bg02.png) no-repeat bottom center ;}
+	.application{max-width:1200px;margin:0 auto;overflow:hidden;}
+	.application_tittle{text-align:center;margin-top:50px;}
+	.application_tittle h2{color:#4c4c4c; }
+	.application_tittle span{color:#b2b2b2;}
+	.application_pic{width:20%;float:left;margin-top:80px;margin-bottom:283px;}
+	.application_pic div:hover{opacity:0.5;}
+	.application_pic:hover a{font-size:20px;}
+	.application_pic:hover{margin-bottom:277px;}
+	.application_pic div,.application_pic h3{text-align:center;}
+	.application_pic a{font-size:14px;color:#4c4c4c;}
+		@media(max-width:800px){.application_pic{width:33.3%;margin-top:0px;margin-bottom:30px;}
+							.application_pic img{width:50%;}
+							.application_tittle{margin-bottom:30px;}
+							.application_pic:hover{margin-bottom:24px;}
+		}

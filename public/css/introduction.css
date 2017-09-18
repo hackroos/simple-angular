@@ -1,0 +1,27 @@
+@charset "UTF-8";
+	/**内容**/
+	.content_box{overflow:hidden;}
+	.content_bg{background:#f3f3f3;}
+	.content_wrap{max-width:1200px;margin:0 auto;}
+	.content_wrap h1{font-size:14px;color:#4c4c4c;line-height:65px;}
+	.content_wrap h1 span{color:#b2b2b2;}
+		/*左内容*/
+	.content_left{float:left;width:25%;}
+	.content_left li{border-bottom:1px solid #cccccc;background:#fff;}
+	.content_left .no_border{border:none;}
+	.content_left .change:hover{background:#f3f3f3;}
+	.content_left .active{background:#368be4;}
+	.content_left a{font-size:14px;color:#4c4c4c;padding:18px 80px 18px 16px;display:block;}
+	.content_left span{font-size:12px;color:#b2b2b2;}
+	.active a{background:url(../img/introduction/jiantou.png) no-repeat 260px center;}
+	.active a,.active span{color:#f3f3f3;}
+		/*右内容*/
+	.content_right{float:right;background:#fff url(../img/home/bg02.png) no-repeat center bottom;width:70%;padding-bottom:96px;margin-bottom:40px;}
+	.content_right h2{font-size:16px;color:#797f8d;background:url(../img/introduction/iconCompany.png) no-repeat 15px center;padding-left:50px;border-bottom:1px #b2b2b2 solid;line-height:50px; margin-bottom:61px;}
+	.content_right p{font-size:14px;color:#4c4c4c;text-indent:28px;line-height:22px;margin:0 36px 32px 36px;}
+	@media(max-width:800px){.content_right{width:62%;}
+							.content_left{width:35%;}
+							.content_left a{padding-left:8px;padding-right:38px;}
+							.active a{background-position:220px center;}
+							.content_wrap{padding:0 20px;}
+		}
