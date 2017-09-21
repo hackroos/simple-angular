@@ -1,45 +1,38 @@
 //声明依赖module模块
-var app = angular.module('app', ['ionic']);
+var app = angular.module('app', ['ng','ngRoute']);
 
 //配置状态
-app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider){
-  $ionicConfigProvider.tabs.position('bottom');
-  $stateProvider.state('start', {
-    templateUrl: 'tpl/start.html',
-    url: '/ngStart'
+app.config(function($routeProvider){
 
-  }).state('home',{
+  $routeProvider.when('/ngStart', {
+    templateUrl: 'tpl/start.html'
+
+  }).when('/ngPage',{
     templateUrl: 'tpl/home-page.html',
-    url: '/ngPage'
+    controller: 'homeCtrl'
 
-  }).state('intr', {
-    templateUrl: 'tpl/intrduction.html',
-    url: '/ngIntr'
+  }).when('/ngIntr', {
+    templateUrl: 'tpl/intrduction.html'
 
-  }).state('product', {
-    templateUrl: 'tpl/product.html',
-    url: '/ngProduct'
+  }).when('/ngProduct', {
+    templateUrl: 'tpl/product.html'
 
-  }).state('case', {
-    templateUrl: 'tpl/case.html',
-    url: '/ngCase'
+  }).when('/ngCase', {
+    templateUrl: 'tpl/case.html'
 
-  }).state('recr', {
-    templateUrl: 'tpl/recruitment.html',
-    url: '/ngRecr'
+  }).when('/ngRecr', {
+    templateUrl: 'tpl/recruitment.html'
 
-  }).state('connect', {
-    templateUrl: 'tpl/connect_us.html',
-    url: '/ngCont'
-  })
+  }).when('/ngCont', {
+    templateUrl: 'tpl/connect_us.html'
 
-  $urlRouterProvider.otherwise('/ngStart');
+  }).otherwise({redirectTo:'/ngStart'})
 });
 
 //创建父控制器
-app.controller('parentCtrl',['$scope','$state',function($scope,$state){
-  $scope.jump = function(desState, params){
-    $state.go(desState , params);
+app.controller('parentCtrl',['$scope','$location',function($scope,$location){
+  $scope.jump = function(desPath){
+    $location.path(desPath);
   }
 
   //这是存储页头的所有信息
@@ -59,4 +52,13 @@ app.controller('parentCtrl',['$scope','$state',function($scope,$state){
     }
     $scope.arr[$index].className = "color_change";
   }
+}]);
+
+//创建home-page控制器
+app.controller('homeCtrl',['$scope','$http', function($scope, $http){
+  $http.get('/cnew').success(function (data){
+    console.log(data);
+    $scope.companry = data[0];
+    $scope.lists = data[1];
+  });
 }]);

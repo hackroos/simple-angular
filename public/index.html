@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>主页</title>
-    <link rel="stylesheet" href="css/ionic.css" />
-    <link rel="stylesheet" href="css/home-page.css" />
+    <!-- <link rel="stylesheet" href="css/ionic.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home-page.css">
     <link rel="stylesheet" href="css/case.css">
     <link rel="stylesheet" href="css/connect_us.css">
     <link rel="stylesheet" href="css/introduction.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/recruitment.css">
-    <link rel="stylesheet" href="css/index.css" />
-    <script type="text/javascript" src="js/ionic.bundle.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <script type="text/javascript" src="js/ionic.bundle.js"></script> -->
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular-route.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body ng-controller="parentCtrl">
 
     <!-- 制定盛放代码片段的容器 -->
-    <div ui-view></div>
+    <div ng-view></div>
 
   </body>
 </html>

@@ -4,18 +4,28 @@
 	.c_news h2{color:#4c4c4c;}
 	.c_news span{color:#b2b2b2;}
 	.c_news{text-align:center;margin-top:50px;}
-	.n_pic{float:left;/*margin-left:83px;*/margin-top:73px;width:50%;}
+	.n_pic{float:left;/*margin-left:83px;*/margin-top:73px;}
 	.n_pic img{display:block;width:100%;}
-	.n_content{float:right;margin-top:47px;}
+	.n_content{margin-top:30px;}
 	.n_content h3{color:#368be4;border-bottom:1px solid #b2b2b2;line-height:70px;}
 	.date{color:#368be4;font-size:22px;margin-right:10px;float:left;}
 	.year h1{color:#4c4c4c;font-size:14px;line-height:22px;border-left:1px solid #b2b2b2;padding-left:11px;}
-	.n_content a{font-size:14px;color:#4c4c4c;float:left;margin-left:29px;}
-	.n_content div{border-bottom:1px dashed #b2b2b2;line-height:70px;overflow:hidden;}
-	.year{float:left;margin-top:18px;}
+	.n_content a{font-size:14px;color:#4c4c4c;float:left;}
+	.n_content .j-time{border-bottom:1px dashed #b2b2b2;line-height:70px;overflow:hidden;}
+	.year{float:left;color:#4c4c4c;padding-left: 11px;border-left:1px solid #b2b2b2;}
+
+	.year span{
+		position:relative;
+	}
+	.year span:first-child{
+		top:-15px;
+	}
+	.year span:last-child{
+		top:15px;
+		left:-20px;
+	}
 @media(max-width:800px){
 	.n_content{text-align:center;width:100%;}
-	.n_pic{position:relative;top:30px;left:25%;margin-top:30px;}
 	.news{width:70%;}}
 	/**股东介绍**/
 	.gt_wrap{background:#f2f2f2 url(../img/home/background.png) no-repeat bottom center;}
